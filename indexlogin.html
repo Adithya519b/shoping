@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Door</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+
+        }
+        body{
+            background-image: url(groceryitems/bg.jpg);
+        }
+        .login{
+            margin:auto;
+            width: 800px;
+            height: 600px;
+            z-index: 1;
+
+        }
+        fieldset{
+            border-radius: 20px;
+            border-color: black;
+            height: 70vh;
+            margin-top: 10%;
+            background:linear-gradient(45deg, white ,rgb(224, 133, 72)
+        );
+            
+        }
+        input{
+            display: block;
+            margin: 5% auto;
+            width: 80%;
+            height: 15%;
+            border-radius: 15px;
+            position: relative;
+            background: white;
+            outline: none;
+            border-color: black;
+            box-shadow: black 5px 5px 15px;
+            font-weight: 800;
+        
+            
+        }
+        legend{
+            font-size: 30px;
+            color: rgb(17, 2, 46);
+        }
+        @media screen and (max-width:500px){
+            .login{
+                width: 80vw;
+                height: 70vh;
+
+            }
+            .popup{
+                position:fixed;
+                left:0%;
+                margin:0px;
+            }
+            
+        }
+        .submit{
+            background-color: orange;
+            
+        }
+        .popup{
+            width: 275px;
+            height: 275px;
+            position: fixed;
+            top:20%;
+            left:40%;
+            margin: auto;
+            background-color:red;
+            padding: 10px;
+            z-index: 2;
+        }
+img{
+
+margin: auto 15%;
+border-radius: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="login">
+        <form>
+            <fieldset>
+                <legend>login</legend>
+
+                <input type="text" placeholder="Enter your name" class="username">
+                <input type="password" placeholder="Enter password" class="password">
+                <input type="submit" class="submit" onclick="check()">
+            </fieldset>
+        </form>
+        </div>
+        <div class="popup">
+            <img src="groceryitems/nosymbol.webp" alt="no entry" width="200" height="200">
+            <h1>Incorrect username/password!!</h1>
+        </div>
+        
+    
+    <script src="script.js"></script>
+</body
