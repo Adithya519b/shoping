@@ -48,19 +48,7 @@
             font-size: 30px;
             color: rgb(17, 2, 46);
         }
-        @media screen and (max-width:500px){
-            .login{
-                width: 80vw;
-                height: 70vh;
-
-            }
-            .popup{
-                position:fixed;
-                left:0%;
-                margin:0px;
-            }
-            
-        }
+        
         .submit{
             background-color: orange;
             
@@ -70,17 +58,37 @@
             height: 275px;
             position: fixed;
             top:20%;
-            left:40%;
+            left:30%;
             margin: auto;
             background-color:red;
             padding: 10px;
             z-index: 2;
+            display: none;
         }
 img{
 
 margin: auto 15%;
 border-radius: 20px;
 }
+@media screen and (max-width:500px){
+            .login{
+                width: 80%;
+                height: 70%;
+
+            
+            }
+            .popup{
+            width: 275px;
+            height: 275px;
+            position: absolute;
+            top:10%;
+            left:0%;
+            margin:auto;
+            background-color:red;
+            padding: 10px;
+            
+            }
+        }
     </style>
 </head>
 <body>
@@ -102,4 +110,5 @@ border-radius: 20px;
         
     
     <script src="script.js"></script>
-</body
+    </body>
+    </html>

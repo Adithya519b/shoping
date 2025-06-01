@@ -9,11 +9,13 @@ function check(){
         console.log(pass);
         console.log("chect ok!")
         window.location.href = "indexhome.html";
+        
     }
     else{
          console.log(user);
         console.log(pass);
         console.log("checkfaild")
+        document.querySelector(".popup").style.display="block";
     }
 }
 submit.addEventListener('click',function(event){
