@@ -2,6 +2,15 @@
     margin: 0px;
     padding: 0px;
 }
+@keyframes cartadd{
+ 0%{
+    display: none;
+ }
+ 25%{
+    display: block;
+ }
+
+}
 .page{
     width:900px;
     padding: 3%;
@@ -10,8 +19,8 @@
 }
 .card{
     border:2px solid black;
-    width: 48%;
-    height: 48%;
+    width: 400px;
+    height: 500px;
     border-radius: 15px;
     padding: 2px;
     
@@ -29,14 +38,17 @@ img{
 .details{
    /* border:2px solid black;
 */    padding: 2%;
+margin: 2%;
     display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
+    border:2px solid orange;
+    border-radius: 15px;
 }
 button{
     background-color: orange;
-    padding: 1%;
+    padding: 2%;
     border-radius:5px;
 }
 .webname{
@@ -91,9 +103,28 @@ a{
 .details{
     margin-top: -10px;
     padding:0%;
+    
 }
 .pagination{
      position:absolute;
     left:30%;
 }
+}
+.animation{
+    display: none;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top:20%;
+    left:30%;
+    
+}   
+.animationimg{
+    border-radius: 50px;
+}
+.cart{
+    animation-name: cartadd;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
 }
