@@ -84,7 +84,7 @@ document.querySelectorAll(".add-cart").forEach(button => {
 
 
        
-        alert(`${itemText} added to cart!`);
+        
         console.log(cartItem.price);
     
        
